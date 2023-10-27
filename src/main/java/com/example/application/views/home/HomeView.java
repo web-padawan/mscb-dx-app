@@ -24,6 +24,24 @@ import com.example.application.domain.DataService;
 public class HomeView extends Composite<VerticalLayout> {
 
     public HomeView() {
+        /*
+        DX test tasks:
+
+        1. Test the default behavior:
+
+            - select multiple items in MultiSelectComboBox or Grid
+            - change MultiSelectComboBox to take all available space
+            - resize the SplitLayout and observe how component works
+
+        2. Test the new features:
+
+            - make MultiSelectComboBox show selected items at the top
+              of the overlay when it is opened
+            - make MultiSelectComboBox always show chips for every
+              selected item
+            - try to resize the SplitLayout and to select some items
+        */
+
         getContent().setHeightFull();
         getContent().setWidthFull();
 
