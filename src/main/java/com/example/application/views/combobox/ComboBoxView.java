@@ -1,4 +1,4 @@
-package com.example.application.views.home;
+package com.example.application.views.combobox;
 
 import com.vaadin.flow.component.Composite;
 import com.vaadin.flow.data.provider.ListDataView;
@@ -15,15 +15,16 @@ import com.vaadin.flow.router.RouteAlias;
 
 import java.util.Set;
 
+import com.example.application.views.MainLayout;
 import com.example.application.domain.Country;
 import com.example.application.domain.DataService;
 
-@PageTitle("Home")
-@Route(value = "home")
-@RouteAlias(value = "")
-public class HomeView extends Composite<VerticalLayout> {
+@PageTitle("Combo Box")
+@Route(value = "combobox", layout = MainLayout.class)
+@RouteAlias(value = "", layout = MainLayout.class)
+public class ComboBoxView extends Composite<VerticalLayout> {
 
-    public HomeView() {
+    public ComboBoxView() {
         /*
         DX test tasks:
 
